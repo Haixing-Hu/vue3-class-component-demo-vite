@@ -1,22 +1,31 @@
-<script setup>
-import HelloWorld from './components/HelloWorld.vue'
-import TheWelcome from './components/TheWelcome.vue'
-</script>
-
 <template>
   <header>
     <img alt="Vue logo" class="logo" src="./assets/logo.svg" width="125" height="125" />
-
     <div class="wrapper">
-      <HelloWorld msg="You did it!" />
+      <hello-world msg="You did it!" />
     </div>
   </header>
-
   <main>
-    <TheWelcome />
+    <the-welcome />
   </main>
 </template>
+<script>
+import { Component, toVue } from '@haixing_hu/vue3-class-component';
+import HelloWorld from './components/HelloWorld.vue';
+import TheWelcome from './components/TheWelcome.vue';
 
+@Component({
+  components: {
+    HelloWorld,
+    TheWelcome,
+  },
+})
+class App {
+  // empty
+}
+
+export default toVue(App);
+</script>
 <style scoped>
 header {
   line-height: 1.5;
