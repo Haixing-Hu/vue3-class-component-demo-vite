@@ -80,7 +80,7 @@ The following steps will guide you through the project creation process.
         }
       },
     };
-    // https://vitejs.dev/config/
+
     export default defineConfig({
       plugins: [
         vue({
@@ -104,9 +104,34 @@ The following steps will guide you through the project creation process.
     File Components (SFCs). After closely examining its source code, we
     determined that to achieve correct transpilation, we need to apply [Babel]
     after [vite-plugin-vue] processes the source code. Therefore, the very
-    simple plugin function above suffices for our needs.
+    simple plugin function above suffices for our needs. 
 
-7.  Edit `src/components/HelloWorld.vue` to modify its `<script>` content as follows:
+7.  As an alternative, you can use [our version of vite-plugin-babel]. The 
+   `vite.config.js` can be simplified as follows:
+    ```js
+    import { fileURLToPath, URL } from 'node:url';
+    import { defineConfig } from 'vite';
+    import vue from '@vitejs/plugin-vue';
+    import babel from '@haixing_hu/vite-plugin-babel';
+    
+    export default defineConfig({
+      plugins: [
+        vue({
+          script: {
+            babelParserPlugins: ['decorators'],     // must enable decorators support
+          },
+        }),
+        babel(),                                    // must be after the vue plugin
+      ],
+      resolve: {
+        alias: {
+          '@': fileURLToPath(new URL('./src', import.meta.url)),
+        },
+      },
+    });
+    ```
+
+8.  Edit `src/components/HelloWorld.vue` to modify its `<script>` content as follows:
     ```javascript
     import { Component, Prop, toVue } from '@haixing_hu/vue3-class-component';
 
@@ -120,7 +145,7 @@ The following steps will guide you through the project creation process.
     ```
     **NOTE:** You MUST remove the `setup` in the `<script>` tag.
 
-8.  Edit `src/components/TheWelcome.vue` to modify its `<script>` content as follows:
+9.  Edit `src/components/TheWelcome.vue` to modify its `<script>` content as follows:
     ```javascript
     import { Component, toVue } from '@haixing_hu/vue3-class-component';
     import WelcomeItem from './WelcomeItem.vue'
@@ -147,7 +172,7 @@ The following steps will guide you through the project creation process.
     export default toVue(TheWelcome);
     ```
     **NOTE:** You MUST remove the `setup` in the `<script>` tag.
-9.  Edit `src/App.vue` to modify its `<script>` content as follows:
+10. Edit `src/App.vue` to modify its `<script>` content as follows:
     ```javascript
     import { Component, toVue } from '@haixing_hu/vue3-class-component';
     import HelloWorld from './components/HelloWorld.vue';
@@ -166,7 +191,7 @@ The following steps will guide you through the project creation process.
     export default toVue(App);
     ```
 
-10. Run the dev-server
+11. Run the dev-server
     ```shell
     yarn dev
     ```
@@ -177,3 +202,4 @@ The following steps will guide you through the project creation process.
 [Babel]: https://babeljs.io/
 [vite-plugin-vue]: https://www.npmjs.com/package/@vitejs/plugin-vue
 [vite-plugin-babel]: https://www.npmjs.com/package/vite-plugin-babel
+[our version of vite-plugin-babel]: https://npmjs.com/package/@haixing_hu/vite-plugin-babel
