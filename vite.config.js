@@ -13,6 +13,7 @@ import babel from '@haixing_hu/vite-plugin-babel';
 
 // https://vitejs.dev/config/
 export default defineConfig({
+  base: './',                               // use relative pathes for all resources
   plugins: [
     vue({
       script: {
