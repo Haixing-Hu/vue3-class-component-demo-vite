@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "A demo project for vue3-class-component",
   "author": "Haixing Hu",
-  "license": "Apache License 2.0",
+  "license": "Apache-2.0",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/Haixing-Hu/vue3-class-component-demo-vite.git"
