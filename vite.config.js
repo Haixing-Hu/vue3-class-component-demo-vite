@@ -20,7 +20,7 @@ export default defineConfig({
         babelParserPlugins: ['decorators'], // enable decorators support
       },
     }),
-    babel(),                                // must after the vue plugin
+    babel(),
   ],
   resolve: {
     alias: {

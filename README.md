@@ -70,7 +70,8 @@ The following steps will guide you through the project creation process.
     
     // A very simple Vite plugin support babel transpilation
     const babelPlugin = {
-      name: 'plugin-babel',
+      name: 'vite-plugin-babel',
+      enforce: 'post',
       transform: (src, id) => {
         if (/\.(jsx?|vue)$/.test(id)) {              // the pattern of the file to handle
           return babel.transform(src, {
@@ -88,7 +89,7 @@ The following steps will guide you through the project creation process.
             babelParserPlugins: ['decorators'],     // must enable decorators support
           },
         }),
-        babelPlugin,                                // must be after the vue plugin
+        babelPlugin,                                
       ],
       resolve: {
         alias: {
@@ -121,7 +122,7 @@ The following steps will guide you through the project creation process.
             babelParserPlugins: ['decorators'],     // must enable decorators support
           },
         }),
-        babel(),                                    // must be after the vue plugin
+        babel(),                                   
       ],
       resolve: {
         alias: {
