@@ -3251,16 +3251,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"vite-plugin-babel@npm:^1.1.3":
-  version: 1.1.3
-  resolution: "vite-plugin-babel@npm:1.1.3"
-  peerDependencies:
-    "@babel/core": ^7.0.0
-    vite: ^2.7.0 || ^3.0.0 || ^4.0.0
-  checksum: 1d092122bc896de8f0cff7d27c27092a92475823419ad1c57408dd9f5b5886cc10861999de74fe62536689c2c2db144e7f616c48db2c752abc4d7e969b8caa34
-  languageName: node
-  linkType: hard
-
 "vite@npm:^4.4.11":
   version: 4.4.11
   resolution: "vite@npm:4.4.11"
@@ -3315,7 +3305,6 @@ __metadata:
     "@haixing_hu/vue3-class-component": ^1.2.0
     "@vitejs/plugin-vue": ^4.4.0
     vite: ^4.4.11
-    vite-plugin-babel: ^1.1.3
     vue: ^3.3.4
   languageName: unknown
   linkType: soft
