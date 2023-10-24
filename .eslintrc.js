@@ -1,11 +1,11 @@
-/*******************************************************************************
- *
- *    Copyright (c) 2022 - 2023.
- *    Haixing Hu, Qubit Co. Ltd.
- *
- *    All rights reserved.
- *
- ******************************************************************************/
+////////////////////////////////////////////////////////////////////////////////
+//
+//    Copyright (c) 2022 - 2023.
+//    Haixing Hu, Qubit Co. Ltd.
+//
+//    All rights reserved.
+//
+////////////////////////////////////////////////////////////////////////////////
 module.exports = {
   // https://eslint.org/docs/user-guide/configuring#configuration-cascading-and-hierarchy
   // This option interrupts the configuration hierarchy at this file

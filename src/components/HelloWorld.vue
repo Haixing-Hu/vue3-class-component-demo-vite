@@ -1,3 +1,11 @@
+<!------------------------------------------------------------------------------
+  -
+  -    Copyright (c) 2022 - 2023.
+  -    Haixing Hu, Qubit Co. Ltd.
+  -
+  -    All rights reserved.
+  -
+  ----------------------------------------------------------------------------->
 <script>
 import { Component, Prop, toVue } from '@haixing_hu/vue3-class-component';
 
