@@ -1575,6 +1575,25 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@haixing_hu/clone@npm:^1.4.1":
+  version: 1.4.1
+  resolution: "@haixing_hu/clone@npm:1.4.1"
+  peerDependencies:
+    "@babel/runtime": ^7.23.0
+    "@haixing_hu/typeinfo": ^2.3.0
+  checksum: 92aa4bcafa052f260585021aa9bb8b234d384ad4e85f47a756a1f04e2a846cee27672c56b3b637605baee2fd5f6172a363f386aa9bdd017c040cc6c7f824e404
+  languageName: node
+  linkType: hard
+
+"@haixing_hu/typeinfo@npm:^2.3.0":
+  version: 2.3.0
+  resolution: "@haixing_hu/typeinfo@npm:2.3.0"
+  peerDependencies:
+    "@babel/runtime": ^7.23.0
+  checksum: 7adc275a32477fe27d59509288ca661cefa24a69583da0d89dd0dc176d4b0f49f884c6a811fe34777de458d31c6d992f612d6c69248ac69e8a4456b8cc3f14ea
+  languageName: node
+  linkType: hard
+
 "@haixing_hu/vite-plugin-babel@npm:^1.5.0":
   version: 1.5.0
   resolution: "@haixing_hu/vite-plugin-babel@npm:1.5.0"
@@ -1584,13 +1603,15 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@haixing_hu/vue3-class-component@npm:^1.5.1":
-  version: 1.5.1
-  resolution: "@haixing_hu/vue3-class-component@npm:1.5.1"
+"@haixing_hu/vue3-class-component@npm:^1.8.1":
+  version: 1.8.1
+  resolution: "@haixing_hu/vue3-class-component@npm:1.8.1"
   peerDependencies:
     "@babel/runtime": ^7.23.2
+    "@haixing_hu/clone": ^1.4.1
+    "@haixing_hu/typeinfo": ^2.3.0
     vue: ^3.3.4
-  checksum: 0d5f074502e684dfd3579f4b8fe768adf43dfcb5d35486eb0cf52faa2b3b2931f66d46f51ce825b967b9e76e17856d529ab87b744a07d0b514c5593350eb4b28
+  checksum: 4fd9d7d60bbb045c12b9fc48c9abcf02411d45b2d51512b799f56f781327764a15911ddd69d8d7a62a3d7634025811e57661b2bb3dda2b181820c0cf884a4e48
   languageName: node
   linkType: hard
 
@@ -4066,8 +4087,10 @@ __metadata:
     "@babel/plugin-transform-runtime": ^7.22.15
     "@babel/preset-env": ^7.22.20
     "@babel/runtime": ^7.23.2
+    "@haixing_hu/clone": ^1.4.1
+    "@haixing_hu/typeinfo": ^2.3.0
     "@haixing_hu/vite-plugin-babel": ^1.5.0
-    "@haixing_hu/vue3-class-component": ^1.5.1
+    "@haixing_hu/vue3-class-component": ^1.8.1
     "@vitejs/plugin-vue": ^4.4.0
     eslint: ^8.51.0
     eslint-plugin-vue: ^9.17.0

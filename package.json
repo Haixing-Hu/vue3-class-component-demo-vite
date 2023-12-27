@@ -27,7 +27,9 @@
     "lint": "eslint --ext .js,.vue ./"
   },
   "dependencies": {
-    "@haixing_hu/vue3-class-component": "^1.5.1",
+    "@haixing_hu/clone": "^1.4.1",
+    "@haixing_hu/typeinfo": "^2.3.0",
+    "@haixing_hu/vue3-class-component": "^1.8.1",
     "vue": "^3.3.4"
   },
   "devDependencies": {
