@@ -46,5 +46,9 @@
     "eslint-plugin-vue": "^9.17.0",
     "vite": "^4.4.11"
   },
+  "resolutions": {
+    "@babel/helpers": "7.23.0"
+  },
+  "_comment": "There is a bug in @babel/helpers > 7.23.0. See #16179, #16180",
   "packageManager": "yarn@3.6.4"
 }

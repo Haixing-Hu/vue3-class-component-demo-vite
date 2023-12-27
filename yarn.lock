@@ -326,14 +326,14 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@babel/helpers@npm:^7.23.0":
-  version: 7.23.1
-  resolution: "@babel/helpers@npm:7.23.1"
+"@babel/helpers@npm:7.23.0":
+  version: 7.23.0
+  resolution: "@babel/helpers@npm:7.23.0"
   dependencies:
     "@babel/template": ^7.22.15
     "@babel/traverse": ^7.23.0
     "@babel/types": ^7.23.0
-  checksum: acfc345102045c24ea2a4d60e00dcf8220e215af3add4520e2167700661338e6a80bd56baf44bb764af05ec6621101c9afc315dc107e18c61fa6da8acbdbb893
+  checksum: ad8509f9507757600f216a6d37eb7e4450727895ec01ba6a2ebc0bf675bb86ffd54f83b1d36094246ebc9e7c41e5609c4a2ac41a325a296ef77ecfab3be7d4cf
   languageName: node
   linkType: hard
 
