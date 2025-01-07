@@ -86,7 +86,7 @@
   </welcome-item>
 </template>
 <script>
-import { Component, toVue } from '@haixing_hu/vue3-class-component';
+import { Component, toVue } from '@qubit-ltd/vue3-class-component';
 import WelcomeItem from './WelcomeItem.vue'
 import DocumentationIcon from './icons/IconDocumentation.vue'
 import ToolingIcon from './icons/IconTooling.vue'

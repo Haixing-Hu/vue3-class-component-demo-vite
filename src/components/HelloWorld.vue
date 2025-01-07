@@ -7,7 +7,7 @@
   -
   ----------------------------------------------------------------------------->
 <script>
-import { Component, Prop, toVue } from '@haixing_hu/vue3-class-component';
+import { Component, Prop, toVue } from '@qubit-ltd/vue3-class-component';
 
 @Component
 class HelloWorld {

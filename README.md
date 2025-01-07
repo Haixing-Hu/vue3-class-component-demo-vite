@@ -39,7 +39,7 @@ The following steps will guide you through the project creation process.
 
 4.  Add required dependencies
     ```shell
-    yarn add @haixing_hu/vue3-class-component
+    yarn add @qubit-ltd/vue3-class-component @qubit-ltd/clone @qubit-ltd/naming-style @qubit-ltd/type-detect @qubit-ltd/typeinfo
     yarn add --dev @babel/core @babel/runtime @babel/preset-env
     yarn add --dev @babel/plugin-proposal-decorators @babel/plugin-transform-class-properties @babel/plugin-transform-runtime
     ```
@@ -113,7 +113,7 @@ The following steps will guide you through the project creation process.
     import { fileURLToPath, URL } from 'node:url';
     import { defineConfig } from 'vite';
     import vue from '@vitejs/plugin-vue';
-    import babel from '@haixing_hu/vite-plugin-babel';
+    import babel from '@qubit-ltd/vite-plugin-babel';
     
     export default defineConfig({
       plugins: [
@@ -134,7 +134,7 @@ The following steps will guide you through the project creation process.
 
 8.  Edit `src/components/HelloWorld.vue` to modify its `<script>` content as follows:
     ```javascript
-    import { Component, Prop, toVue } from '@haixing_hu/vue3-class-component';
+    import { Component, Prop, toVue } from '@qubit-ltd/vue3-class-component';
 
     @Component
     class HelloWorld {
@@ -148,7 +148,7 @@ The following steps will guide you through the project creation process.
 
 9.  Edit `src/components/TheWelcome.vue` to modify its `<script>` content as follows:
     ```javascript
-    import { Component, toVue } from '@haixing_hu/vue3-class-component';
+    import { Component, toVue } from '@qubit-ltd/vue3-class-component';
     import WelcomeItem from './WelcomeItem.vue'
     import DocumentationIcon from './icons/IconDocumentation.vue'
     import ToolingIcon from './icons/IconTooling.vue'
@@ -175,7 +175,7 @@ The following steps will guide you through the project creation process.
     **NOTE:** You MUST remove the `setup` in the `<script>` tag.
 10. Edit `src/App.vue` to modify its `<script>` content as follows:
     ```javascript
-    import { Component, toVue } from '@haixing_hu/vue3-class-component';
+    import { Component, toVue } from '@qubit-ltd/vue3-class-component';
     import HelloWorld from './components/HelloWorld.vue';
     import TheWelcome from './components/TheWelcome.vue';
 
@@ -203,4 +203,4 @@ The following steps will guide you through the project creation process.
 [Babel]: https://babeljs.io/
 [vite-plugin-vue]: https://www.npmjs.com/package/@vitejs/plugin-vue
 [vite-plugin-babel]: https://www.npmjs.com/package/vite-plugin-babel
-[our version of vite-plugin-babel]: https://npmjs.com/package/@haixing_hu/vite-plugin-babel
+[our version of vite-plugin-babel]: https://npmjs.com/package/@qubit-ltd/vite-plugin-babel
